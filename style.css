@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Courier New", monospace;
+}
+
+body{
+    background: radial-gradient(circle, #0b1d4a, #020617);
+    color:white;
+    padding:60px;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    gap:30px;
+    margin-bottom:40px;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+}
+nav a:hover{
+    color:cyan;
+}
+
+/* HEADINGS */
+h2{
+    border-left:4px solid cyan;
+    padding-left:12px;
+    margin-bottom:30px;
+    text-transform:uppercase;
+}
+
+/* CARD */
+.card-section{
+    margin-bottom:60px;
+}
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    list-style:none;
+}
+.card{
+    background:rgba(0,0,0,0.55);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:16px;
+    padding:22px;
+    text-align:center;
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-8px);
+    border-color:cyan;
+}
+
+/* TIMELINE */
+.timeline{
+    position:relative;
+    padding-left:30px;
+}
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:5px;
+    top:0;
+    width:2px;
+    height:100%;
+    background:cyan;
+}
+.timeline-item{
+    margin-bottom:30px;
+    position:relative;
+}
+.dot{
+    width:12px;
+    height:12px;
+    background:cyan;
+    border-radius:50%;
+    position:absolute;
+    left:-1px;
+    top:6px;
+}
+
+/* ICONS */
+.icon-links{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+}
+.icon-links a{
+    font-size:26px;
+    color:white;
+}
+.icon-links a:hover{
+    color:cyan;
+}
+
+/* CONTACT */
+.contact-form{
+    max-width:420px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+.contact-form input,
+.contact-form textarea{
+    padding:12px;
+    border-radius:10px;
+    border:none;
+}
+.contact-form button{
+    padding:12px;
+    border-radius:10px;
+    background:cyan;
+    border:none;
+    font-weight:bold;
+}
+
+/* RESUME */
+.resume-actions{
+    margin-top:20px;
+    display:flex;
+    gap:20px;
+}
+.btn{
+    padding:12px 18px;
+    border-radius:12px;
+    text-decoration:none;
+}
+.view{
+    border:1px solid cyan;
+    color:cyan;
+}
+.download{
+    background:cyan;
+    color:black;
+}
