@@ -344,3 +344,131 @@ line-height: 1.5;
     background:cyan;
     color:black;
 }
+
+
+/* ================= MOBILE RESPONSIVE FIX ================= */
+@media (max-width: 768px) {
+
+  body{
+    padding: 16px;
+  }
+
+  /* Greeting */
+  .greet{
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  #helloText{
+    font-size: 1.6rem;
+  }
+
+  .hero{
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  /* Profile Image */
+  .ProfessionalPic{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 120px;
+    height: 120px;
+  }
+
+  /* NAV */
+  nav{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 18px;
+  }
+
+  /* Sections */
+  .AboutMe,
+  .education,
+  .sec1,
+  .card-section{
+    padding: 16px;
+  }
+
+  /* Headings */
+  h2{
+    font-size: 18px;
+  }
+
+  /* Timeline */
+  .timeline{
+    padding-left: 14px;
+  }
+
+  .year span{
+    font-size: 16px;
+  }
+
+  .details{
+    font-size: 14px;
+  }
+
+  /* Skills grid */
+  .div1{
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 14px;
+  }
+
+  .skillCard{
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* Projects / Experience list */
+  .card-grid{
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Icons / Links */
+  .icon-links{
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .icon-links a{
+    font-size: 22px;
+  }
+
+  .custom-icon{
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Gallery */
+  .gallery{
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+  }
+
+  .flip-inner{
+    height: 220px;
+  }
+
+  .flip-back p{
+    font-size: 13px;
+  }
+
+  /* Contact */
+  .contact-form{
+    width: 100%;
+  }
+
+  /* Resume buttons */
+  .resume-actions{
+    flex-direction: column;
+  }
+
+  .btn{
+    text-align: center;
+  }
+}
