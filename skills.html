@@ -1,82 +1,345 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Skills</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Courier New", monospace;
+}
 
-</head>
+body{
+    background: radial-gradient(circle, #0b1d4a, #020617);
+    color:white;
+    padding:60px;
+}
+#bgVideo{
+    position:fixed;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+    left:0;
+    top:0;
+    filter:brightness(45%);
+}
 
-<body>
+/* Greeting */
+.hero {
+  padding: 60px 20px;
+}
+.greet {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0px;
+}
 
-<nav class="icon-nav">
-  <a href="index.html" title="About">
-    <i class="fa-solid fa-user"></i>
-  </a>
+#helloText {
+  font-size: 3.5rem;
+  display: inline-block;
+  margin-right: 8px;
+  transition: opacity 0.4s ease;
+  color: cyan;
+}
+.name {
+  color: white;
+}
+.wave {
+  margin-left: 6px;
+}
 
-  <a href="skills.html" title="Skills">
-    <i class="fa-solid fa-code"></i>
-  </a>
+/* NAV */
+nav{
+    display:flex;
+    gap:30px;
+    margin-bottom:40px;
+    font-size: 25px;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+}
+nav a:hover{
+    color:cyan;
+}
 
-  <a href="projects.html" title="Projects">
-    <i class="fa-solid fa-folder"></i>
-  </a>
-
-  <a href="exp.html" title="Experience">
-    <i class="fa-solid fa-briefcase"></i>
-  </a>
-
-  <a href="contact.html" title="Contact">
-    <i class="fa-solid fa-award"></i>
-  </a>
-</nav>
-
-<video autoplay muted loop id="bgVideo">
-    <source src="Img-Videos/Screen Recording 2025-12-06 040046.mp4" type="video/mp4">
-</video>
-<section class="sec1">
-  <h2>SKILLS</h2>
-
-  <h3>Languages</h3>
-  <ul class="div1">
-    <li class="skillCard">C</li>
-    <li class="skillCard">C++</li>
-    <li class="skillCard">Java</li>
-    <li class="skillCard">Python</li>
-    <li class="skillCard">HTML</li>
-    <li class="skillCard">CSS</li>
-    <li class="skillCard">JavaScript</li>
-    <li class="skillCard">Angular</li>
-    <li class="skillCard">SQL</li>
-  </ul>
-
-  <h3>Technical Platforms</h3>
-  <ul class="div1">
-    <li class="skillCard">VS Code</li>
-    <li class="skillCard">IDLE</li>
-    <li class="skillCard">Turbo C/C++</li>
-    <li class="skillCard">GitHub</li>
-    <li class="skillCard">BigQuery</li>
-    <li class="skillCard">Jupyter Notebook</li>
-    <li class="skillCard">Google Colab</li>
-    <li class="skillCard">MySQL</li>
-  </ul>
-
-  <h3>Editing Tools</h3>
-  <ul class="div1">
-    <li class="skillCard">Canva</li>
-    <li class="skillCard">Inkscape</li>
-    <li class="skillCard">DaVinci Resolve</li>
-    <li class="skillCard">Unity</li>
-  </ul>
-
-  <h3>Other</h3>
-  <ul class="div1">
-    <li class="skillCard">Presentation & Communication Skills</li>
-  </ul>
-</section>
+.ProfessionalPic{
+    border-radius: 100px;
+    box-shadow:
+    0 0 10px rgba(99, 143, 146, 0.756),
+    0 0 15px rgba(16, 223, 237, 0.934),
+    0 0 25px rgba(16, 141, 237, 0.934);
+    margin-bottom: 5px;
+    margin-left: 40%;
+}
+/* HEADINGS */
+h2{
+    border-left:4px solid cyan;
+    padding-left:12px;
+    margin-bottom:20px;
+    margin-top: 20px;
+    text-transform:uppercase;
+}
 
 
-</body>
-</html>
+/* index.html */
+/* About */
+.AboutMe{
+    backdrop-filter: blur(10px);
+    background-color:rgba(0, 0, 0, 0.333);
+    padding: 20px;
+    margin-bottom: 5px;
+}
+/* education */
+.education{
+    backdrop-filter: blur(10px);
+    background-color:rgba(0, 0, 0, 0.333);
+    padding: 20px;
+}
+.timeline {
+  border-left: 2px solid cyan;
+  padding-left: 20px;
+}
+.year {
+  margin-bottom: 20px;
+  position: relative;
+}
+.year span {
+  color: cyan;
+  font-size: 20px;
+  cursor: pointer;
+}
+.details {
+  opacity: 0;
+  margin-top: 8px;
+  margin-left: 10px;
+  color: white;
+  transition: 0.3s ease;
+}
+.year:hover .details {
+  opacity: 1;
+}
+
+
+/* skills.html */
+.sec1{
+    backdrop-filter: blur(10px);
+    background:rgba(0, 0, 0, 0.333);
+    padding: 20px;
+}
+.sec1 h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.div1{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+  list-style:none;
+  padding:0;
+}
+.skillCard{
+  background:rgba(255,255,255,0.06);
+  padding:16px;
+  border-radius:12px;
+  text-align:center;
+}
+.skillCard:hover{
+ transform: translateY(-3px);
+ box-shadow: 0 0 10px rgba(16, 223, 237, 0.934);
+ /* background: rgba(16, 223, 237, 0.934); */
+}
+
+
+/* Projects.html */
+/* common for the 3 section */
+.card-section{
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.333);
+    padding: 30px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.card-grid{
+    list-style-type: none;
+    display: flex;
+    gap:20px;
+}
+
+/* for projects section */
+.card{
+    border:1px black solid;
+    border-radius:15px;
+    padding: 15px;
+    line-height: 1em;
+}
+.card a{
+    text-decoration:none ;
+    color: white;
+}
+.card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgba(16, 223, 237, 0.934);
+}
+/* visit Gallery link */
+.design-icon{
+    text-decoration: none;
+    color: cyan;
+}
+
+/* Links section */
+.icon-links{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width:80%;
+    margin: auto;
+    padding: 0;
+}
+.card1{
+    padding-left: 30px;
+}
+.icon-links a{
+    font-size:26px;
+    color:white;
+}
+/* GFG & Leetcode */
+.custom-icon{
+  width:36px;
+  height:36px;
+  filter:brightness(0) invert(1);
+  transition:0.3s ease;
+}
+.custom-icon:hover{
+  transform:scale(1.2);
+}
+/* exp.html-with access to card-grid & .card-section of projects.html */
+.CardCertificates{
+line-height: 1.5;
+}
+/* .three-column-layout{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 60px;
+}
+
+@media (max-width: 900px){
+  .three-column-layout{
+    grid-template-columns: 1fr;
+  }
+} */
+
+
+/* ===== GALLERY GRID ===== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+    /* width: 100%; */
+    object-fit: contain;
+    height: 100%;
+}
+
+/* ===== FLIP CARD ===== */
+.flip-card {
+    perspective: 1000px;
+}
+
+/* Inner */
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+/* Hover flip */
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front & Back */
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+/* Front */
+.flip-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Back */
+.flip-back {
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transform: rotateY(180deg);
+    backdrop-filter: blur(10px);
+}
+
+.flip-back h3 {
+    margin-bottom: 10px;
+    color: cyan;
+}
+
+.flip-back p {
+    font-size: 14px;
+    opacity: 0.9;
+    }
+
+
+
+
+/* CONTACT */
+.contact-form{
+    max-width:420px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+.contact-form input,
+.contact-form textarea{
+    padding:12px;
+    border-radius:10px;
+    border:none;
+}
+.contact-form button{
+    padding:12px;
+    border-radius:10px;
+    background:cyan;
+    border:none;
+    font-weight:bold;
+}
+
+/* RESUME */
+.resume-actions{
+    margin-top:20px;
+    display:flex;
+    gap:20px;
+}
+.btn{
+    padding:12px 18px;
+    border-radius:12px;
+    text-decoration:none;
+}
+.view{
+    border:1px solid cyan;
+    color:cyan;
+}
+.download{
+    background:cyan;
+    color:black;
+}
