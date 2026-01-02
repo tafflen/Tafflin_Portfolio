@@ -10,7 +10,16 @@ body{
     color:white;
     padding:60px;
 }
-
+#bgVideo{
+    position:fixed;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+    left:0;
+    top:0;
+    filter:brightness(55%);
+}
 /* NAV */
 nav{
     display:flex;
@@ -25,14 +34,36 @@ nav a:hover{
     color:cyan;
 }
 
+.ProfessionalPic{
+    border-radius: 100px;
+    box-shadow:
+    0 0 10px rgba(99, 143, 146, 0.756),
+    0 0 15px rgba(16, 223, 237, 0.934),
+    0 0 25px rgba(16, 141, 237, 0.934);
+    margin-bottom: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-left: 40%;
+}
 /* HEADINGS */
 h2{
     border-left:4px solid cyan;
     padding-left:12px;
-    margin-bottom:30px;
+    margin-bottom:20px;
+    margin-top: 20px;
     text-transform:uppercase;
 }
-
+.AboutMe{
+    backdrop-filter: blur(10px);
+    background-color:rgba(0, 0, 0, 0.333);
+    padding: 20px;
+    margin-bottom: 5px;
+}
+.education{
+    backdrop-filter: blur(10px);
+    background-color:rgba(0, 0, 0, 0.333);
+    padding: 20px;
+}
 /* CARD */
 .card-section{
     margin-bottom:60px;
@@ -56,8 +87,8 @@ h2{
     transform:translateY(-8px);
     border-color:cyan;
 }
-
-/* TIMELINE */
+/* 
+TIMELINE
 .timeline{
     position:relative;
     padding-left:30px;
@@ -74,8 +105,8 @@ h2{
 .timeline-item{
     margin-bottom:30px;
     position:relative;
-}
-.dot{
+} */
+/* .dot{
     width:12px;
     height:12px;
     background:cyan;
@@ -83,7 +114,36 @@ h2{
     position:absolute;
     left:-1px;
     top:6px;
+} */
+
+.timeline {
+  border-left: 2px solid cyan;
+  padding-left: 20px;
 }
+
+.year {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.year span {
+  color: cyan;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.details {
+  opacity: 0;
+  margin-top: 8px;
+  margin-left: 10px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.year:hover .details {
+  opacity: 1;
+}
+
 
 /* ICONS */
 .icon-links{
@@ -97,14 +157,6 @@ h2{
 }
 .icon-links a:hover{
     color:cyan;
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Courier New", monospace;
 }
 
 body {
