@@ -4,23 +4,43 @@
 <meta charset="UTF-8">
 <title>Experience</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
+<nav class="icon-nav">
+  <a href="index.html" title="About">
+    <i class="fa-solid fa-user"></i>
+  </a>
 
-<nav>
-    <a href="index.html">About</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="exp.html">Experience</a>
-    <a href="contact.html">Contact</a>
+  <a href="skills.html" title="Skills">
+    <i class="fa-solid fa-code"></i>
+  </a>
+
+  <a href="projects.html" title="Projects">
+    <i class="fa-solid fa-folder"></i>
+  </a>
+
+  <a href="exp.html" title="Experience">
+    <i class="fa-solid fa-briefcase"></i>
+  </a>
+
+  <a href="contact.html" title="Contact">
+    <i class="fa-solid fa-award"></i>
+  </a>
 </nav>
 
+<video autoplay muted loop id="bgVideo">
+    <source src="Img-Videos/Screen Recording 2025-12-06 040046.mp4" type="video/mp4">
+</video>
+
+<!-- <div class="three-column-layout"> -->
 <!-- EXPERIENCE -->
-<section class="timeline-section">
+<section class="card-section">
     <h2>Experience</h2>
-    <div class="timeline">
-        <div class="timeline-item">
+    <div class="Card">
+        <div class="card-grid">
             <span class="dot"></span>
             <p>Associate Creative, Rotaract Club – Designer</p>
         </div>
@@ -28,17 +48,23 @@
 </section>
 
 <!-- AWARDS -->
-<section class="timeline-section">
+<section class="card-section">
     <h2>Awards</h2>
-    <div class="timeline">
-        <div class="timeline-item">
+    <div class="Card">
+        <div class="card-grid">
             <span class="dot"></span>
             <p>
                 Technovanza ’24 (Technical Symposium) – Secured First Prize in Paper Presentation,
-                conducted at JCE
+                conducted at JCE <br><br>
             </p>
         </div>
-        <div class="timeline-item">
+         <div class="card-grid">
+            <span class="dot"></span>
+            <p>
+               1st prize in Digital Art, conducted by NLAG Youth competition <br><br>
+            </p>
+        </div>
+        <div class="card-grid">
             <span class="dot"></span>
             <p>
                 IIT Pal’s Innowah – Paper Presentation; built a prototype of the project idea
@@ -48,18 +74,18 @@
 </section>
 
 <!-- CERTIFICATIONS -->
-<section class="timeline-section">
+<section class="card-section">
     <h2>Certifications</h2>
-    <div class="timeline">
-        <div class="timeline-item">
+    <div class="CardCertificates">
+        <div class="card-grid">
             <span class="dot"></span>
             <p>Unity Certification</p>
         </div>
-        <div class="timeline-item">
+        <div class="card-grid">
             <span class="dot"></span>
             <p>SEO Certification – HubSpot Academy</p>
         </div>
-        <div class="timeline-item">
+        <div class="card-grid">
             <span class="dot"></span>
             <p>Front-End Full Stack Java Development – Coursera</p>
         </div>
@@ -75,7 +101,7 @@
         <li class="card">German (A1)</li>
     </ul>
 </section>
-
+<!-- </div> -->
 
 </body>
 </html>
