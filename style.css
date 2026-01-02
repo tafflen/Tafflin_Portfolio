@@ -20,11 +20,38 @@ body{
     top:0;
     filter:brightness(45%);
 }
+
+/* Greeting */
+.hero {
+  padding: 60px 20px;
+}
+.greet {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 0px;
+}
+
+#helloText {
+  font-size: 3.5rem;
+  display: inline-block;
+  margin-right: 8px;
+  transition: opacity 0.4s ease;
+  color: cyan;
+}
+.name {
+  color: white;
+}
+.wave {
+  margin-left: 6px;
+}
+
 /* NAV */
 nav{
     display:flex;
     gap:30px;
     margin-bottom:40px;
+    font-size: 25px;
 }
 nav a{
     color:white;
@@ -40,7 +67,7 @@ nav a:hover{
     0 0 10px rgba(99, 143, 146, 0.756),
     0 0 15px rgba(16, 223, 237, 0.934),
     0 0 25px rgba(16, 141, 237, 0.934);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     margin-left: 40%;
 }
 /* HEADINGS */
