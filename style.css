@@ -23,17 +23,17 @@ body{
 
 /* Greeting */
 .hero {
-  padding: 60px 20px;
+  padding: 30px 20px;
 }
 .greet {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
   margin-top: 0px;
 }
 
 #helloText {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   display: inline-block;
   margin-right: 8px;
   transition: opacity 0.4s ease;
@@ -87,6 +87,7 @@ h2{
     background-color:rgba(0, 0, 0, 0.333);
     padding: 20px;
     margin-bottom: 5px;
+    margin-top: 0px;
 }
 /* education */
 .education{
