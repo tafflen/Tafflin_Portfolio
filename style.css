@@ -164,7 +164,10 @@ h2{
     display: flex;
     gap:20px;
 }
-
+.card-section a{
+    text-decoration: none;
+    color: cyan;
+}
 /* for projects section */
 .card{
     border:1px black solid;
@@ -174,7 +177,7 @@ h2{
 }
 .card a{
     text-decoration:none ;
-    color: white;
+    color: cyan;
 }
 .card:hover{
     transform: translateY(-3px);
@@ -341,9 +344,11 @@ line-height: 1.5;
     color:cyan;
 }
 .download{
-    background:cyan;
     color:black;
+    border:1px solid cyan;
 }
+
+
 
 
 /* ================= MOBILE RESPONSIVE FIX ================= */
